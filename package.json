@@ -1,0 +1,27 @@
+{
+  "name": "remix-progressbar",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && cp package.json README.md ./dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@remix-run/node": "^2.11.0",
+    "@remix-run/react": "^2.11.0",
+    "@remix-run/serve": "^2.11.0",
+    "@types/nprogress": "^0.2.3",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "prettier": "^3.3.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "nprogress": "^0.2.0"
+  }
+}
