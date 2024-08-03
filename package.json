@@ -5,9 +5,10 @@
   "scripts": {
     "build": "tsc && cp package.json README.md ./dist"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["remix", "nprogress"],
+  "author": "Bryan Low",
+  "license": "MIT",
+  "type": "module",
   "description": "",
   "devDependencies": {
     "@remix-run/node": "^2.11.0",
