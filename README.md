@@ -1,4 +1,4 @@
-# Remix Progress Bar
+# Remix NProgress
 
 A Remix Progress Bar component made using NProgress.
 
