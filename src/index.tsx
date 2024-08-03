@@ -1,5 +1,4 @@
 import NProgress from "nprogress";
-import "nprogress/nprogress.css";
 import { useFetchers, useNavigation } from "@remix-run/react";
 import React, { useEffect, useMemo } from "react";
 
