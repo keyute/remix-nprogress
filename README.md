@@ -5,7 +5,7 @@ A Remix Progress Bar component made using NProgress.
 ## Install
 
 ```bash
-npm i remix-progressbar
+npm i remix-nprogress
 ```
 
 ## Usage
@@ -13,13 +13,13 @@ npm i remix-progressbar
 Add the component as one of your children in the function `Layout` in `root.tsx`
 
 ```typescript jsx
-import RemixProgressBar from "remix-progressbar";
+import RemixNProgress from "remix-nprogress";
 
 export function Layout({children}: { children: React.ReactNode }) {
   return (
     // your code here
     <body>
-    <RemixProgressBar/>
+    <RemixNProgress/>
     {children}
     <ScrollRestoration/>
     <Scripts/>
@@ -35,5 +35,5 @@ You may configure how you want your progress bar to look like by passing in `opt
 For example, to disable the spinner
 
 ```typescript jsx
-<RemixProgressBar options={{showSpinner: false}}/>
+<RemixNProgress showSpinner={false}/>
 ```
