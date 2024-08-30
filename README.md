@@ -1,8 +1,6 @@
 # Remix NProgress
 
-A Remix Progress Bar component made using NProgress.
-
-**Note: This component is a ESNext module and is validated for Remix + Vite only.**
+A Remix Progress Bar component made using NProgress validated for Remix + Vite.
 
 ## Install
 
