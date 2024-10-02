@@ -1,5 +1,5 @@
 import NProgress from "nprogress";
-import { useFetchers, useNavigation } from "@remix-run/react";
+import { useFetchers, useNavigation, useRevalidator } from "@remix-run/react";
 import { useEffect, useMemo } from "react";
 
 type RemixNProgressProps = {
@@ -21,14 +21,16 @@ type RemixNProgressProps = {
 export default function RemixNProgress(props: Readonly<RemixNProgressProps>) {
   const navigation = useNavigation();
   const fetchers = useFetchers();
+  const revalidator = useRevalidator();
   const state = useMemo(() => {
     const states = [
       navigation.state,
+      revalidator.state,
       ...fetchers.map((fetcher) => fetcher.state),
     ];
     if (states.some((state) => state !== "idle")) return "loading";
     return "idle";
-  }, [navigation.state, fetchers]);
+  }, [navigation.state, revalidator.state, fetchers]);
 
   useEffect(() => {
     if (state === "loading") {
@@ -42,8 +44,8 @@ export default function RemixNProgress(props: Readonly<RemixNProgressProps>) {
     NProgress.configure(props);
   }, []);
 
-  const color = props.color ?? "#29d"
-  const height = props.height ?? "2px"
+  const color = props.color ?? "#29d";
+  const height = props.height ?? "2px";
 
   const css = `
 /* Make clicks pass-through */
