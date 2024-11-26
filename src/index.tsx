@@ -1,5 +1,5 @@
 import NProgress from "nprogress";
-import { useFetchers, useNavigation, useRevalidator } from "@remix-run/react";
+import { useFetchers, useNavigation, useRevalidator } from "react-router";
 import { useEffect, useMemo } from "react";
 
 type RemixNProgressProps = {
