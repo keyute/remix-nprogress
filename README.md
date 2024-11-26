@@ -18,7 +18,7 @@ npm i react-router-nprogress
 Add the component as one of your children in the function `Layout` in `root.tsx`
 
 ```typescript jsx
-import RemixNProgress from "react-router-nprogress";
+import ReactRouterNProgress from "react-router-nprogress";
 
 export function Layout({children}: { children: React.ReactNode }) {
   return (
