@@ -2,6 +2,11 @@
 
 A Remix Progress Bar component made using NProgress validated for Remix + Vite.
 
+## React Router v7
+
+Starting with version 2.0.0, this module supports React Router v7 and will no longer work with Remix v2.
+If you are looking for a version that supports Remix v2, please use version 1.1.0.
+
 ## Install
 
 ```bash
