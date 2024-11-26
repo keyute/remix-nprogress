@@ -2,7 +2,7 @@ import NProgress from "nprogress";
 import { useFetchers, useNavigation, useRevalidator } from "react-router";
 import { useEffect, useMemo } from "react";
 
-type RemixNProgressProps = {
+type ReactRouterNProgressProps = {
   minimum?: number;
   template?: string;
   easing?: string;
@@ -18,7 +18,7 @@ type RemixNProgressProps = {
   height?: string;
 };
 
-export default function RemixNProgress(props: Readonly<RemixNProgressProps>) {
+export default function ReactRouterNProgress(props: Readonly<ReactRouterNProgressProps>) {
   const navigation = useNavigation();
   const fetchers = useFetchers();
   const revalidator = useRevalidator();
